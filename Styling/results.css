@@ -1,8 +1,11 @@
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #333;
     margin: 0;
     padding: 20px;
+    background-image: url(wallpaperflare.com_wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1 {
@@ -10,13 +13,13 @@ h1 {
     color: #ffffff;
 }
 
-.highlight-container {
+.results-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.highlight-tile {
+.result-panel {
     width: 300px;
     margin: 20px;
     padding: 15px;
@@ -26,27 +29,18 @@ h1 {
     transition: transform 0.3s ease-in-out;
 }
 
-.highlight-tile:hover {
+.result-panel:hover {
     transform: scale(1.05);
 }
 
-.highlight-title {
+.result-panel h2 {
     font-size: 18px;
     font-weight: bold;
     color: #333;
 }
 
-.highlight-description {
+.result-panel p {
     font-size: 14px;
     color: #666;
     margin-top: 8px;
 }
-
-.highlight-video {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-top: 10px;
-}
-
